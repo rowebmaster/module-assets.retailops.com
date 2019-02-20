@@ -2,7 +2,7 @@
 Title: Product Search
 header: An intuitive Product Management system for simple selling
 subtitle: Bask in the efficiency of a powerful product management system, with a single product catalog supporting unlimited sales channels and the fastest time-to-live in the industry.
----
+--- 
 <section class="section pt-5 pb-3">
     <div class="container">
         <div class="row">
