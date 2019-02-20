@@ -1,9 +1,35 @@
 {{ define "main"}}
-<main class="bg-white">
-    <section class="section">
-        <div class="container">
-            <h1>{{.Title}}</h1>
+{{ partial "styles" .}}
+<main>
+    <header class="section py-5">
+        <div class="container text-center">
+            <div class="row justify-content-center">
+                <div class="col-lg-7">
+                    <h1 class="title">
+                        {{.Params.Header}}
+                    </h1>
+                    <p class="text-muted">{{.Params.Subtitle}}</p>
+                    <div class="mt-4">
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#addModule">
+                            Speak to your account manager
+                        </button>
+                    </div>
+                </div>
+            </div>
         </div>
-    </section>
+    </header>
+    <h1></h1>
+    {{.Content}}
+    <div class="container">
+        <div class="row mb-5">
+            <div class="col text-center">
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#addModule">
+                    Speak to your account manager
+                </button>
+            </div>
+        </div>
+    </div>
+    {{ partial "modal" .}}
+    {{ partial "scripts" .}}
 </main>
 {{ end }}

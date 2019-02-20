@@ -3,3 +3,4 @@ languageCode: "en-us"
 title: "RetailOps Modules"
 disableKinds:
   - RSS
+disableHugoGeneratorInject: true
