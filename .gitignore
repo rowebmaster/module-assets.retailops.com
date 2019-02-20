@@ -7,6 +7,7 @@
 /dist
 /tmp
 .idea
+*.go
 /public
 /data
 # dependencies
